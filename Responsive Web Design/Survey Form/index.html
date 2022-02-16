@@ -26,13 +26,14 @@
             <input type="email" name="email" id="email" placeholder="Enter your email" required>
           </div>
           <div class="form-group">
-            <label for="number" id="number-label">Age (optional)</label>
+            <label for="number" id="number-label">Age <span class="hint">(optional)</span></label>
             <input type="number" name="age" id="number" min="10" max="100" placeholder="10-100">
           </div>
+
           <div class="form-group">
             <label for="dropdown">What was the first Jackass you watched?</label>
-            <select type="number" name="dropdown" id="dropdown">
-              <option value="" disabled selected>Select a Jackass</option>
+            <select type="number" name="dropdown" id="dropdown" required>
+              <option disabled selected>Select a Jackass</option>
               <option value="the-show">Jackass the TV Show</option>
               <option value="the-movie">Jackass: The Movie</option>
               <option value="number-two">Jackass: Number Two</option>
@@ -41,6 +42,7 @@
               <option value="forever">Jackass Forever</option>
             </select>
           </div>
+
           <div class="form-group">
             <button type="submit" id="submit submit-button">Submit</button>
           </div>
