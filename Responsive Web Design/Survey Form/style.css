@@ -10,3 +10,8 @@ body {
 *:after {
   box-sizing: inherit;
 }
+
+.hint {
+  font-size: 0.85em;
+  color: #999;
+}
