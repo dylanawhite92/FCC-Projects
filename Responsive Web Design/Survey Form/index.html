@@ -5,33 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Survey Form</title>
-    
+
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-
     <header>
       <h1 id="title">Jackass Forever Feedback Form</h1>
-      <p id="description">God bless Johnny Knoxville and the whole crew. Tell me all about 'em. #PoopiesForPresident</p>
-      
+      <p id="description">
+        God bless Johnny Knoxville and the whole crew. Tell me all about 'em.
+        #PoopiesForPresident
+      </p>
+
       <div class="container">
         <form id="survey-form">
           <div class="form-group">
             <label for="name" id="name-label">Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="email" id="email-label">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
           </div>
           <div class="form-group">
-            <label for="number" id="number-label">Age <span class="hint">(optional)</span></label>
-            <input type="number" name="age" id="number" min="10" max="100" placeholder="10-100">
+            <label for="number" id="number-label"
+              >Age <span class="hint">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="100"
+              placeholder="10-100"
+            />
           </div>
 
           <div class="form-group">
-            <label for="dropdown">What was the first Jackass you watched?</label>
+            <label for="dropdown"
+              >What was the first Jackass you watched?</label
+            >
             <select type="number" name="dropdown" id="dropdown" required>
               <option disabled selected>Select a Jackass</option>
               <option value="the-show">Jackass the TV Show</option>
@@ -44,22 +69,130 @@
           </div>
 
           <div class="form-group">
-            <p>From the list below, which of these is one of your favorite Jackass Stunts?</p>
+            <p>Which of these is one of your favorite Jackass Stunts?</p>
 
-            <input type="radio" name="favorite-skit" id="burglars" class="radio-input" value="The Burglars" checked>
-            <label for="favorite-stunt">The Burglars</label><br>
-            <input type="radio" name="favorite-skit" id="toro-totter" class="radio-input" value="Toro Totter">
-            <label for="favorite-stunt">Toro Totter</label><br>
-            <input type="radio" name="favorite-skit" id="poo-cocktail-supreme" class="radio-input" value="Poo Cocktail Supreme">
-            <label for="favorite-stunt">Poo Cocktail Supreme</label><br>
-            <input type="radio" name="favorite-skit" id="fireworks" class="radio-input" value="Fireworks Wake-Up">
-            <label for="favorite-stunt">Fireworks Wake-Up</label><br>
-            <input type="radio" name="favorite-skit" id="beekini" class="radio-input" value="Furniture Shopping">
-            <label for="favorite-stunt">Furniture Shopping</label>
+            <input
+              type="radio"
+              name="favorite-skit"
+              id="burglars"
+              class="radio-input"
+              value="The Silence of the Lambs"
+              checked
+            />
+            <label for="favorite-stunt">The Silence of the Lambs</label><br />
+            <input
+              type="radio"
+              name="favorite-skit"
+              id="toro-totter"
+              class="radio-input"
+              value="Toro Totter"
+            />
+            <label for="favorite-stunt">Toro Totter</label><br />
+            <input
+              type="radio"
+              name="favorite-skit"
+              id="poo-cocktail-supreme"
+              class="radio-input"
+              value="Poo Cocktail Supreme"
+            />
+            <label for="favorite-stunt">Poo Cocktail Supreme</label><br />
+            <input
+              type="radio"
+              name="favorite-skit"
+              id="fireworks"
+              class="radio-input"
+              value="Fireworks Wake-Up"
+            />
+            <label for="favorite-stunt">Fireworks Wake-Up</label><br />
+            <input
+              type="radio"
+              name="favorite-skit"
+              id="furniture-shopping"
+              class="radio-input"
+              value="Furniture Shopping"
+            />
+            <label for="favorite-stunt">Furniture Shopping</label><br />
+            <input
+              type="radio"
+              name="favorite-skit"
+              id="none"
+              class="radio-input"
+              value="None"
+            />
+            <label for="favorite-stunt"
+              >None. Comment your favorite below because you can't follow the
+              rules.</label
+            >
           </div>
-            
+
           <div class="form-group">
-            <p>Who are your favorite Jackass stars? <span class="hint">(Check all that apply)</span></p>
+            <p>
+              Who are your favorite old school Jackass stars?
+              <span class="hint">(Check all that apply)</span>
+            </p>
+            <input
+              type="checkbox"
+              id="johnny-knoxville"
+              name="johnny-knoxville"
+              value="Johnny Knoxville"
+            />
+            <label for="johnny-knoxville">Johnny Knoxville</label><br />
+            <input
+              type="checkbox"
+              id="steve-o"
+              name="steve-o"
+              value="Steve-O"
+            />
+            <label for="steve-o">Steve-O</label><br />
+            <input
+              type="checkbox"
+              id="bam-margera"
+              name="bam-margera"
+              value="Bam Margera"
+            />
+            <label for="bam-margera">Bam Margera</label><br />
+            <input
+              type="checkbox"
+              id="chris-pontius"
+              name="chris-pontius"
+              value="Chris Pontius"
+            />
+            <label for="chris-pontius">Chris Pontius</label><br />
+            <input
+              type="checkbox"
+              id="wee-man"
+              name="wee-man"
+              value="Jacon (Wee Man) Acuña"
+            />
+            <label for="wee-man">Jacon (Wee Man) Acuña</label><br />
+            <input
+              type="checkbox"
+              id="preston-lacy"
+              name="preston-lacy"
+              value="Preston Lacy"
+            />
+            <label for="preston-lacy">Preston Lacy</label><br />
+            <input
+              type="checkbox"
+              id="ryan-dunn"
+              name="ryan-dunn"
+              value="Ryan Dunn (RIP)"
+            />
+            <label for="ryan-dunn">Ryan Dunn (RIP)</label><br />
+            <input
+              type="checkbox"
+              id="dave-england"
+              name="dave-england"
+              value="Dave England"
+            />
+            <label for="dave-england">Dave England</label><br />
+            <input
+              type="checkbox"
+              id="danger-ehren"
+              name="danger-ehren"
+              value="Danger Ehren"
+            />
+            <label for="danger-ehren">Danger Ehren</label>
           </div>
 
           <div class="form-group">
@@ -68,7 +201,7 @@
         </form>
       </div>
     </header>
-    
+
     <main></main>
 
     <script src="./main.js"></script>
