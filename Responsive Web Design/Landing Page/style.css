@@ -1,0 +1,9 @@
+.nav-link,
+#nav-bar,
+footer {
+  display: flex;
+}
+
+#nav-bar {
+  justify-content: space-between;
+}
